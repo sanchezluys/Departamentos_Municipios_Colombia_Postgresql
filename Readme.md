@@ -1,4 +1,5 @@
 # Base de Datos de Departamentos y Municipios de Colombia
+# Para Postgresql
 
 ![Colombia Flag](https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg)
 
