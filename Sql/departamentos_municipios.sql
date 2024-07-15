@@ -5,6 +5,7 @@
 -- version 1.0
 -- 2024
 -- para Postgresql version 16
+-- Datos tomados de ejemplo en Mysql
 
 CREATE TABLE departamentos (
   id_departamento integer  NOT NULL,
