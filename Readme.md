@@ -14,6 +14,11 @@ La base de datos incluye:
 - **Departamentos**: Lista completa de los departamentos de Colombia.
 - **Municipios**: Lista completa de los municipios, asociados a sus respectivos departamentos.
 
+
+## Diagrama Entidad Relación
+
+![alt DER](/imagenes/diagramaEntidadRelacion.png)
+
 ## Estructura de la Base de Datos
 
 La base de datos está organizada en las siguientes tablas:
