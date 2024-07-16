@@ -61,3 +61,17 @@ SELECT * FROM departamentos;
 
 ![alt Query_municipios](/imagenes/query_municipios.png)
 
+
+### Obtener todos los municipios con su departamento con un JOIN
+
+```sql
+SELECT 
+        municipio,
+        departamento
+FROM 	municipios
+JOIN 	departamentos 
+        ON municipios.departamento_id = departamentos.id_departamento
+```
+
+![alt ListadoConJoin](/imagenes/query_join.png)
+
