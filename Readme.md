@@ -1,11 +1,13 @@
 # Base de Datos de Departamentos y Municipios de Colombia
 # Para Postgresql
 
-![Colombia Flag](https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg)
+<hr>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" alt="Bandera Colombia" width="150px">
+<hr>
 
 ## Descripción
 
-Este repositorio contiene una base de datos estructurada de los departamentos y municipios de Colombia. La base de datos está diseñada para ser utilizada en proyectos que requieran información geográfica y administrativa detallada del país.
+Este repositorio contiene una base de datos estructurada de los departamentos y municipios de Colombia. La base de datos está diseñada para ser utilizada en proyectos que requieran información geográfica y administrativa detallada del país. El SQL esta diseñado y verificado para PostgreSQL Version 16
 
 ## Contenido
 
