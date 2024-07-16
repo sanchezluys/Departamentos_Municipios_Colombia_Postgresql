@@ -44,6 +44,9 @@ La base de datos está organizada en las siguientes tablas:
 
 ```sql
 SELECT * FROM departamentos;
+```
 
-![alt text](/imagenes/query_departamentos.png)
+### Resultado:
+
+![alt Query_departamentos](/imagenes/query_departamentos.png)
 
