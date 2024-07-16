@@ -27,16 +27,16 @@ La base de datos está organizada en las siguientes tablas:
 
 | Campo  | Tipo         | Descripción                          |
 | ------ | ------------ | ------------------------------------ |
-| id     | INT          | Identificador único del departamento |
-| nombre | VARCHAR(100) | Nombre del departamento              |
+| id_departamento     | INT          | Identificador único del departamento |
+| departamento | VARCHAR(255) | Nombre del departamento              |
 
 ### Tabla: `municipios`
 
 | Campo           | Tipo         | Descripción                       |
 | --------------- | ------------ | --------------------------------- |
-| id              | INT          | Identificador único del municipio |
-| nombre          | VARCHAR(100) | Nombre del municipio              |
-| departamento_id | INT          | Identificador del departamento    |
+| id_municipio              | INT          | Identificador único del municipio |
+| municipio          | VARCHAR(255) | Nombre del municipio              |
+| departamento_id | INT          | Identificador del departamento, llave Foranea  |
 
 ## Ejemplos de Consultas
 
