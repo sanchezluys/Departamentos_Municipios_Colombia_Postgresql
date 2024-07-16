@@ -6,10 +6,12 @@
 -- 2024
 -- para Postgresql version 16
 -- Datos tomados de ejemplo en Mysql
+-- 16/07/2024: Se agregan las llaves primarias, la foranea y la relacion 1:muchos
 
-CREATE TABLE departamentos (
+CREATE TABLE IF NOT EXISTS departamentos (
   id_departamento integer  NOT NULL,
-  departamento varchar(255) NOT NULL DEFAULT ''
+  departamento varchar(255) NOT NULL DEFAULT ''::character varying,
+  CONSTRAINT departamentos_pkey PRIMARY KEY (id_departamento)
 );
 
 --
@@ -51,10 +53,11 @@ INSERT INTO departamentos (id_departamento, departamento) VALUES
 (97, 'Vaupés'),
 (99, 'Vichada');
 
-CREATE TABLE municipios (
+CREATE TABLE IF NOT EXISTS municipios (
   id_municipio integer NOT NULL,
-  municipio varchar(255) NOT NULL DEFAULT '',
-  departamento_id integer NOT NULL
+  municipio varchar(255) NOT NULL DEFAULT ''::character varying,
+  departamento_id integer NOT NULL,
+  CONSTRAINT municipios_pkey PRIMARY KEY (id_municipio)
 ); 
 --
 -- Dumping data for table `municipios`
@@ -1183,3 +1186,10 @@ INSERT INTO municipios (id_municipio, municipio, departamento_id) VALUES
 (1121, 'La Primavera', 99),
 (1122, 'Santa Rosalía', 99),
 (1123, 'Cumaribo', 99);
+
+ALTER TABLE IF EXISTS public.municipios
+    ADD CONSTRAINT relacion FOREIGN KEY (departamento_id)
+    REFERENCES public.departamentos (id_departamento) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
