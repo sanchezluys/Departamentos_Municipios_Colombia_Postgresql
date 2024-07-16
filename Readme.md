@@ -50,3 +50,14 @@ SELECT * FROM departamentos;
 
 ![alt Query_departamentos](/imagenes/query_departamentos.png)
 
+
+### Obtener todos los municipios
+
+```sql
+SELECT * FROM departamentos;
+```
+
+### Resultado:
+
+![alt Query_municipios](/imagenes/query_municipios.png)
+
