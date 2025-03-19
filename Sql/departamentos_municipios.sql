@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS departamentos (
 
 --
 -- Dumping data for table `departamentos`
+-- hecho por luis
 --
 
 INSERT INTO departamentos (id_departamento, departamento) VALUES
